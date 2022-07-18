@@ -1,0 +1,11 @@
+{
+  "name": "olx",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+	  "sass --watch ./sass/main.scss:./public/css/style.css"
+      },
+  "author": "Max",
+  "license": "ISC"
+}
