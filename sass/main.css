@@ -65,6 +65,13 @@ body {
 }
 
 /*---------page 1 ---------*/
+.entete {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .restaurant {
   background-color: rgb(59, 106, 177);
 }
@@ -72,13 +79,25 @@ body {
 .entrees {
   background-color: rgb(90, 185, 90);
 }
+.entrees__liste {
+  background-color: #fff;
+  margin: 2%;
+}
 
 .plats {
   background-color: aqua;
 }
+.plats__liste {
+  background-color: #fff;
+  margin: 2%;
+}
 
 .desserts {
   background-color: aquamarine;
+}
+.desserts__liste {
+  background-color: #fff;
+  margin: 2%;
 }
 
 footer {
