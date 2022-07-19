@@ -1,0 +1,61 @@
+main{
+    background-color: lightgray;
+}
+
+.location{
+    display: flex;
+    background-color: grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.location p{
+    justify-content: center;
+    margin: auto;
+
+}
+
+.reservation{
+    background-color: lightgrey;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+
+    h2, p{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+.card{
+    background-color: $colour-white;
+    margin: auto;
+}
+
+/*---------page 1 ---------*/
+
+.restaurant{
+    background-color: rgb(59, 106, 177);
+}
+
+.entrees{
+    background-color: rgb(90, 185, 90);
+}
+
+.plats{
+    background-color: aqua;
+}
+
+.desserts{
+    background-color: aquamarine;
+}

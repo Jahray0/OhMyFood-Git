@@ -4,8 +4,11 @@
   "description": "OhMyFood",
   "main": "index.js",
   "scripts": {
-	  "sass --watch ./sass/main.scss:./public/css/style.css"
-      },
-  "author": "Max",
-  "license": "ISC"
-}
+    "sass": "sass ./sass/main.scss:./public/css/main.css -w --style compressed",
+    "prefix": "postcss ./public/css/main.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "author": "max",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+  }
+
