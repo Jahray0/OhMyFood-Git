@@ -1,10 +1,16 @@
 main{
-    background-color: lightgray;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 .location{
     display: flex;
-    background-color: grey;
+    background-color: rgb(234,234,234);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -16,7 +22,7 @@ main{
 }
 
 .reservation{
-    background-color: lightgrey;
+    background-color: rgb(246,246,246);
     padding-bottom: 40px;
     padding-top: 40px;
     
@@ -30,17 +36,65 @@ main{
     }
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+.fonctionnement{
+    margin : 5%;    
 
+    li{
+        background-color: rgb(246,246,246);
+        margin: 2%;
+        padding: 2%;
+        border-radius: 20px;   
+        display: flex;  
+        align-items: center;   
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.num{
+    background-color: $colour-primaire;
+    color: $colour-white;
+    border-radius: 30px;
+    position: relative;
+    right: 30px;
+    width: 20px;
+    height: 20px; 
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    
+    
+}
+
+.restaurant{
+    background-color: rgb(246,246,246) ;
+
+    h2{
+        margin : 5%;
+        padding-top: 40px;
+    }
 }
 
 .card{
     background-color: $colour-white;
     margin: auto;
+    margin : 5%;
+    border-radius: 20px ;
+
+    &_image{
+        width: 100%;
+        height: 180px;
+        object-fit: cover; 
+        border-top-left-radius: 30px ;
+        border-top-right-radius: 30px ;
+    }
+
 }
+
+
 
 /*---------page 1 ---------*/
 
@@ -50,7 +104,7 @@ body{
     object-fit: cover; 
 }
 
-.restaurant{
+.etablissement{
     background-color: rgb(59, 106, 177);
 }
 

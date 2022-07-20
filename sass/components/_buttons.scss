@@ -7,7 +7,7 @@
     height: 40px;
     margin: auto;
     color: $colour-white;
-    border: solid 2px $colour-secondaire;
     border-radius: 30px;
+    background: linear-gradient(to bottom right, $colour-secondaire, $colour-primaire);
     
 }
