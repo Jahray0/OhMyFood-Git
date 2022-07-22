@@ -1,11 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html {
+  font-family: Roboto;
+}
+
+footer .titre {
+  font-family: Shrikhand;
+  font-size: 1.3em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+.coeur a {
+  color: black;
+}
+
 .btn {
   display: flex;
   background-color: #FF79DA;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 40px;
-  margin: auto;
+  height: 20px;
   color: #fff;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -36,10 +57,13 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
+.location i {
+  padding-right: 20px;
+}
 .location p {
   justify-content: center;
   margin: auto;
+  padding: 10px;
 }
 
 .reservation {
@@ -54,21 +78,30 @@ body {
   width: 70%;
   text-align: center;
 }
+.reservation p {
+  padding: 5%;
+}
 
 .fonctionnement {
   margin: 5%;
 }
 .fonctionnement li {
   background-color: rgb(246, 246, 246);
-  margin: 2%;
-  padding: 2%;
+  margin: 5%;
+  padding: 5%;
   border-radius: 20px;
   display: flex;
   align-items: center;
+  /*font-weight: bold;*/
 }
-.fonctionnement ul {
+
+ul {
   list-style-type: none;
   padding: 0;
+}
+
+i {
+  padding-right: 20px;
 }
 
 .num {
@@ -97,6 +130,7 @@ body {
   margin: auto;
   margin: 5%;
   border-radius: 20px;
+  padding-bottom: 5px;
 }
 .card_image {
   width: 100%;
@@ -105,6 +139,19 @@ body {
      object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+
+.ville p, h3 {
+  /*margin: 0;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*---------page 1 ---------*/
@@ -146,4 +193,12 @@ body {
 footer {
   background-color: rgb(53, 53, 53);
   color: white;
+  padding-left: 5%;
+}
+
+footer i {
+  padding: 0;
+  padding-right: 10px;
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=main.css.map */

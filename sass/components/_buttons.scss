@@ -3,11 +3,8 @@
     background-color: $colour-secondaire;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 40px;
-    margin: auto;
+    height: 20px;
     color: $colour-white;
     border-radius: 30px;
-    background: linear-gradient(to bottom right, $colour-secondaire, $colour-primaire);
-    
+    background: linear-gradient(to bottom right, $colour-secondaire, $colour-primaire);    
 }

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="sass/normalize.css" />
         <link rel="stylesheet" href="sass/main.css" /> <!-- Pour tout le monde -->
         <!-- <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/tablette.css" />     <!-- Pour ceux qui ont une résolution inférieure à 992px -->
         <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/smartphone.css" />   <!-- Pour ceux qui ont une résolution inférieure à 768px -->
@@ -33,7 +33,7 @@
         <div class="reservation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <div class="btn">Explorer nos restaurants</div>
+            <p class="btn">Explorer nos restaurants</p>
         </div>
 
         <div class="ftofooter">
@@ -41,7 +41,7 @@
         <div class="fonctionnement">
             <h2>Fonctionnement</h2>
             <ul>
-                <li><div class="num">1</div><i class="fa-solid fa-mobile-screen-button"></i>   Choisissez un restaurant</li>
+                <li><div class="num">1</div><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
                 <li><div class="num">2</div><i class="fa-solid fa-list-ul"></i>  Composez votre menu</li>
                 <li><div class="num">3</div><i class="fa-solid fa-shop"></i>  Dégustez au restaurant</li>
             </ul>
@@ -65,14 +65,22 @@
 
                         <!--Nom Restaurant-->
 
-                        <div class="card_title">
-                            <h3>La palette du goût</h3>                            
+                        <div class="texte">
+
+                            <div class="card_title">
+                                <h3>La palette du goût</h3>                            
+                            </div>
+
+                            <!--ville-->
+
+                            <div class="ville">
+                                <p>Ménilmontant</p>
+                            </div>
+
                         </div>
 
-                        <!--ville-->
-
-                        <div class="ville">
-                            <p>Ménilmontant</p>
+                        <div class="coeur">
+                            <a href=""><i class="fa-regular fa-heart fa-2xl"></i></a>
                         </div>
   
                     </div>
@@ -87,16 +95,21 @@
 
                     <div class="card_body">
 
-                        <div class="card_title">
-                            <h3>La note enchantée</h3>                            
-                        </div>
+                        <div class="texte">
 
-                        <div class="ville">
-                            <p>Charonne</p>
+                            <div class="card_title">
+                                <h3>La note enchantée</h3>                            
+                            </div>
+
+                            <div class="ville">
+                                <p>Charonne</p>
+                            </div>
                         </div>
   
+                        <div class="coeur">
+                            <a href=""><i class="fa-regular fa-heart fa-2xl"></i></a>
+                        </div>
                     </div>
-
                 </div>
 
                 <div class="card">
@@ -107,12 +120,19 @@
 
                     <div class="card_body">
 
-                        <div class="card_title">
-                            <h3>A la française</h3>                            
+                        <div class="texte">
+
+                            <div class="card_title">
+                                <h3>A la française</h3>                            
+                            </div>
+
+                            <div class="ville">
+                                <p>Cité rouge</p>
+                            </div>
                         </div>
 
-                        <div class="ville">
-                            <p>Cité rouge</p>
+                        <div class="coeur">
+                            <a href=""><i class="fa-regular fa-heart fa-2xl"></i></a>
                         </div>
   
                     </div>
@@ -127,12 +147,20 @@
 
                     <div class="card_body">
 
-                        <div class="card_title">
-                            <h3>Le délice des sens</h3>                            
+                        <div class="texte">
+
+                            <div class="card_title">
+                                <h3>Le délice des sens</h3>                            
+                            </div>
+
+                            <div class="ville">
+                                <p>Folie-Méricourt</p>
+                            </div>
+
                         </div>
 
-                        <div class="ville">
-                            <p>Folie-Méricourt</p>
+                        <div class="coeur">
+                            <a href=""><i class="fa-regular fa-heart fa-2xl"></i></a>
                         </div>
   
                     </div>
@@ -147,11 +175,13 @@
         </main>
 
         <footer>
-            <img src="images/logo/ohmyfood.png" alt="Logo omf">
-            <p>Proposer un restaurant</p>
-            <p>Devenir partenaire</p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
+            <p class="titre">ohmyfood</p>
+            <a href=""><p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p></a>
+            <a href=""><p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p></a>
+            <a href=""><p>Mentions légales</p></a>
+            <a href=""><p>Contact</p></a>
         </footer>
 
         </body>
+    
+
