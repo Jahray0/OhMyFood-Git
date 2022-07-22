@@ -9,6 +9,10 @@ footer .titre {
   font-size: 1.3em;
 }
 
+a {
+  color: black;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -26,9 +30,11 @@ footer a {
   background-color: #FF79DA;
   justify-content: center;
   align-items: center;
-  height: 20px;
+  width: 250px;
+  height: 50px;
   color: #fff;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px grey;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
@@ -71,7 +77,8 @@ body {
   padding-bottom: 40px;
   padding-top: 40px;
 }
-.reservation h2, .reservation p {
+.reservation h2 {
+  padding: 5px;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -79,7 +86,11 @@ body {
   text-align: center;
 }
 .reservation p {
-  padding: 5%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
 }
 
 .fonctionnement {
@@ -92,7 +103,11 @@ body {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  /*font-weight: bold;*/
+  box-shadow: 5px 5px 10px grey;
+}
+
+a li:hover {
+  background-color: rgb(245, 237, 255);
 }
 
 ul {
@@ -131,6 +146,7 @@ i {
   margin: 5%;
   border-radius: 20px;
   padding-bottom: 5px;
+  box-shadow: 5px 5px 10px grey;
 }
 .card_image {
   width: 100%;
