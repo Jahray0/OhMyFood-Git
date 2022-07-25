@@ -229,8 +229,35 @@ footer i {
 
 .note--green {
   color: green;
+  position: relative;
+  right: 56px;
 }
 
 .note--full {
   color: blue;
+  transition: transform 400ms;
+}
+.note--full:hover {
+  transform: translate(150px, 150px);
+}
+
+.testC {
+  padding: 50px;
+}
+.testC p {
+  padding: 50px;
+}
+
+.note--red {
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 3rem;
+  overflow: hidden;
+  padding: 1.85rem 3rem;
+  position: relative;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+.note--red:hover {
+  transform: scale(1.13);
+  background-color: yellow;
 }/*# sourceMappingURL=main.css.map */
