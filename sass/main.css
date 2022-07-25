@@ -217,4 +217,20 @@ footer i {
   padding-right: 10px;
   height: 20px;
   width: 20px;
+}
+
+.note--red {
+  color: red;
+}
+
+.note--yellow {
+  color: yellow;
+}
+
+.note--green {
+  color: green;
+}
+
+.note--full {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */
