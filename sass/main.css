@@ -51,6 +51,11 @@ header img {
   width: 50%;
 }
 
+header a {
+  position: relative;
+  right: 60px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -188,6 +193,10 @@ i {
 .entrees__liste {
   background-color: #fff;
   margin: 2%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .plats {
@@ -196,6 +205,10 @@ i {
 .plats__liste {
   background-color: #fff;
   margin: 2%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .desserts {
@@ -204,6 +217,10 @@ i {
 .desserts__liste {
   background-color: #fff;
   margin: 2%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 footer {

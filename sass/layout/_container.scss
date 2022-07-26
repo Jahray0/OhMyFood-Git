@@ -159,12 +159,17 @@ i{
 
 
 
+
 .entrees{
     background-color: rgb(90, 185, 90);
 
     &__liste{
         background-color: #fff;
         margin: 2%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
 }
@@ -174,6 +179,10 @@ i{
     &__liste{
         background-color: #fff;
         margin: 2%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 }
 
@@ -182,6 +191,10 @@ i{
     &__liste{
         background-color: #fff;
         margin: 2%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
 
     }
 }
