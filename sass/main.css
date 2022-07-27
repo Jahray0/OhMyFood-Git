@@ -126,7 +126,7 @@ body {
 }
 
 a li:hover {
-  background-color: rgb(245, 237, 255);
+  background-color: rgb(246, 246, 246);
 }
 a li:hover i {
   color: #9356DC;
@@ -186,7 +186,7 @@ i {
 }
 .card_new {
   color: rgb(0, 135, 102);
-  background-color: rgb(153, 226, 208);
+  background-color: #99E2D0;
   position: relative;
   bottom: 165px;
   right: 15px;
@@ -209,7 +209,7 @@ i {
 
 /*---------page 1 ---------*/
 .page2 {
-  background-color: grey;
+  background-color: rgb(246, 246, 246);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
 }

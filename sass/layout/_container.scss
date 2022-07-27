@@ -6,7 +6,7 @@ body{
 
 .location{
     display: flex;
-    background-color: rgb(234,234,234);
+    background-color: $colour-back-dark1;
     padding-top: 5px;
     padding-bottom: 5px;
 
@@ -24,7 +24,7 @@ body{
 
 
 .reservation{
-    background-color: rgb(246,246,246);
+    background-color: $colour-back;
     padding-bottom: 40px;
     padding-top: 40px;    
 
@@ -55,7 +55,7 @@ body{
     margin : 5%;    
 
     li{
-        background-color: rgb(246,246,246);
+        background-color: $colour-back;
         margin: 5%;
         padding: 5%;
         border-radius: 20px;   
@@ -67,9 +67,9 @@ body{
 }
 
 a li:hover{
-    background-color: rgb(245,237,255);
+    background-color: $colour-back;
     i{
-        color:#9356DC;
+        color:$colour-primaire;
     }
 }
 
@@ -101,7 +101,7 @@ i{
 }
 
 .restaurant{
-    background-color: rgb(246,246,246) ;
+    background-color: $colour-back;
 
     h2{
         margin : 5%;
@@ -136,7 +136,7 @@ i{
 
     &_new{
         color: rgb(0,135,102);
-        background-color: rgb(153,226,208);
+        background-color: $colour-tertiaire;
         position: relative;
         bottom: 165px;
         right: 15px;
@@ -166,7 +166,7 @@ i{
 /*---------page 1 ---------*/
 
 .page2{
-    background-color: grey;
+    background-color: $colour-back;
     border-top-left-radius:60px;
     border-top-right-radius:60px;
 
