@@ -1,7 +1,3 @@
-main{
-
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -18,20 +14,19 @@ body{
         padding-right: 20px;
     }
 
-    p{
+    p  {
         justify-content: center;
         margin: auto;
         padding: 10px;
     }
-}
 
+}
 
 
 .reservation{
     background-color: rgb(246,246,246);
     padding-bottom: 40px;
-    padding-top: 40px;
-    
+    padding-top: 40px;    
 
     h2{
         padding: 5px;
@@ -46,9 +41,11 @@ body{
     p{
         padding: 5px;
         display: flex;
-        justify-content: center;
         margin: auto;
         text-align: center;
+        justify-content: center;
+        padding: 10px;
+        width: 70%;
 
     }
 
@@ -71,8 +68,10 @@ body{
 
 a li:hover{
     background-color: rgb(245,237,255);
+    i{
+        color:#9356DC;
+    }
 }
-
 
 
 ul{
@@ -99,7 +98,6 @@ i{
     padding: 10px;
 
     
-    
 }
 
 .restaurant{
@@ -112,6 +110,7 @@ i{
 }
 
 .card{
+    
     background-color: $colour-white;
     margin: auto;
     margin : 5%;
@@ -119,12 +118,31 @@ i{
     padding-bottom: 5px;
     box-shadow: 5px 5px 10px grey;
 
+    &_img{
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
     &_image{
+
         width: 100%;
         height: 180px;
         object-fit: cover; 
-        border-top-left-radius: 30px ;
-        border-top-right-radius: 30px ;
+        border-top-left-radius: 20px ;
+        border-top-right-radius: 20px ;
+    }
+
+    &_new{
+        color: rgb(0,135,102);
+        background-color: rgb(153,226,208);
+        position: relative;
+        bottom: 165px;
+        right: 15px;
+        padding: 8px;
+        width: 65px;     
+
     }
 
 }
@@ -147,6 +165,11 @@ i{
 
 /*---------page 1 ---------*/
 
+.page2{
+    background-color: grey;
+
+}
+
 .entete{
     width: 100%;
     height: 250px;
@@ -154,14 +177,14 @@ i{
 }
 
 .etablissement{
-    background-color: rgb(59, 106, 177);
+    
 }
 
 
 
 
-.entrees{
-    background-color: rgb(90, 185, 90);
+.entrees, .plats, .desserts{
+    
 
     &__liste{
         background-color: #fff;
@@ -172,29 +195,4 @@ i{
         align-items: flex-end;
     }
 
-}
-
-.plats{
-    background-color: aqua;
-    &__liste{
-        background-color: #fff;
-        margin: 2%;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-}
-
-.desserts{
-    background-color: aquamarine;
-    &__liste{
-        background-color: #fff;
-        margin: 2%;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
-    }
 }

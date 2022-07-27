@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   font-family: Roboto;
+}
+
+.discover, .ville {
+  font-weight: 300;
 }
 
 footer .titre {
@@ -44,6 +48,7 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  box-shadow: 5px 5px 5px red;
 }
 header img {
   -o-object-fit: cover;
@@ -52,8 +57,8 @@ header img {
 }
 
 header a {
-  position: relative;
-  right: 60px;
+  position: absolute;
+  left: 10px;
 }
 
 body {
@@ -93,9 +98,11 @@ body {
 .reservation p {
   padding: 5px;
   display: flex;
-  justify-content: center;
   margin: auto;
   text-align: center;
+  justify-content: center;
+  padding: 10px;
+  width: 70%;
 }
 
 .fonctionnement {
@@ -113,6 +120,9 @@ body {
 
 a li:hover {
   background-color: rgb(245, 237, 255);
+}
+a li:hover i {
+  color: #9356DC;
 }
 
 ul {
@@ -153,13 +163,28 @@ i {
   padding-bottom: 5px;
   box-shadow: 5px 5px 10px grey;
 }
+.card_img {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .card_image {
   width: 100%;
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card_new {
+  color: rgb(0, 135, 102);
+  background-color: rgb(153, 226, 208);
+  position: relative;
+  bottom: 165px;
+  right: 15px;
+  padding: 8px;
+  width: 65px;
 }
 
 .ville p, h3 {
@@ -176,6 +201,10 @@ i {
 }
 
 /*---------page 1 ---------*/
+.page2 {
+  background-color: grey;
+}
+
 .entete {
   width: 100%;
   height: 250px;
@@ -183,38 +212,7 @@ i {
      object-fit: cover;
 }
 
-.etablissement {
-  background-color: rgb(59, 106, 177);
-}
-
-.entrees {
-  background-color: rgb(90, 185, 90);
-}
-.entrees__liste {
-  background-color: #fff;
-  margin: 2%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.plats {
-  background-color: aqua;
-}
-.plats__liste {
-  background-color: #fff;
-  margin: 2%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.desserts {
-  background-color: aquamarine;
-}
-.desserts__liste {
+.entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
   margin: 2%;
   border-radius: 20px;
