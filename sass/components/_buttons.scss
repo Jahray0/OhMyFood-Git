@@ -8,5 +8,8 @@
     color: $colour-white;
     border-radius: 30px;
     box-shadow: 5px 5px 10px grey;
-    background: linear-gradient(to bottom right, $colour-secondaire, $colour-primaire);    
+    background: linear-gradient(to bottom right, $colour-secondaire, $colour-primaire); 
+    margin: auto;   
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
