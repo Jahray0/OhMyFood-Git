@@ -1,0 +1,19 @@
+/*mettre un coeur rempli en fond caché 
+et faire le passage d'un a l'autre 
+avec opacity ou z-index */
+
+
+.coeur .pif{
+    position:relative;
+    left:55px;
+    z-index: 2;  /*2 devrais etre au dessus de 1*/
+}
+
+.coeur .paf{
+    position:relative;
+    z-index: 1;
+    opacity: 0;
+    &:hover{
+        opacity: 1;
+    }
+}
