@@ -3,17 +3,67 @@ et faire le passage d'un a l'autre
 avec opacity ou z-index */
 
 
-.coeur .pif{
+i.fa-regular.fa-heart.fa-2xl{
     position:relative;
-    left:55px;
-    z-index: 2;  /*2 devrais etre au dessus de 1*/
+    left:56px;
+    z-index:1;
+
 }
 
-.coeur .paf{
-    position:relative;
-    z-index: 1;
+i.fa-solid.fa-heart.fa-2xl.note--full{
+    position: relative;
     opacity: 0;
+    z-index:2;
+    transition-duration: .50s;
+    color:$colour-secondaire;
     &:hover{
         opacity: 1;
+    }
+}
+
+.test{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background:red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform-origin: center;
+    animation:rotate 2s ease forwards infinite;
+}
+
+.circle{
+    background:blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position:relative;
+}
+
+.circle:nth-child(1){
+    left:-100px;
+}
+
+.circle:nth-child(2){
+    left:100px;
+    top:-40px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
     }
 }
