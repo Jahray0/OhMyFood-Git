@@ -138,6 +138,11 @@ a li:hover i {
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+}
+
+ul a{
+    width: 33%;
 }
 
 i {

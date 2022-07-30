@@ -78,7 +78,11 @@ a li:hover{
 ul{
     list-style-type: none;
     padding: 0;
+    flex-direction: column;
 
+    a{
+        width: 100%;
+    }
 }
     
 i{
