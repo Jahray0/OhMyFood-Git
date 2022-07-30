@@ -7,7 +7,6 @@ i.fa-regular.fa-heart.fa-2xl{
     position:relative;
     left:56px;
     z-index:1;
-
 }
 
 i.fa-solid.fa-heart.fa-2xl.note--full{
@@ -24,8 +23,21 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 .entrees__liste, .plats__liste, .desserts__liste{
     position:relative;
     animation : move 2s;
+
+    &:hover{
+        animation : done 2s;
+    }
 }
 
+@keyframes done{
+    from{
+
+    }
+    to{
+        
+    }
+    
+}
 
 @keyframes move{
     from{
