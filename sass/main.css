@@ -255,6 +255,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 100px;
 }
 .entrees p, .entrees h4, .plats p, .plats h4, .desserts p, .desserts h4 {
   padding-left: 20px;
@@ -303,9 +304,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
           animation: move 2s;
 }
 
-@-webkit-keyframes done {}
-
-@keyframes done {}
 @-webkit-keyframes move {
   from {
     opacity: 0;
@@ -316,6 +314,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     top: 0px;
   }
 }
+
 @keyframes move {
   from {
     opacity: 0;
@@ -326,6 +325,50 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     top: 0px;
   }
 }
+.check_box:hover {
+  -webkit-animation: check 2s;
+          animation: check 2s;
+}
+
+.check {
+  -webkit-animation: rotateme 2s;
+          animation: rotateme 2s;
+}
+
+@-webkit-keyframes check {
+  from {
+    right: -70px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes check {
+  from {
+    right: -70px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@-webkit-keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*test keyframe*/
 .test {
   height: 100vh;
   display: grid;

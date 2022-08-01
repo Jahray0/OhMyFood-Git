@@ -250,11 +250,14 @@ i {
 
 .check_box{
   background-color: #99E2D0;
-  height: 100px;
-  width: 70px;
+  height: 100%;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+  position: relative;
+  right: -70px;
 }
 
 .check{
@@ -265,7 +268,6 @@ i {
   width: 40px;
   background-color: white;
   border-radius: 20px;
-  transform: rotate(180deg); 
 }
 
 .check .fa-solid.fa-check.fa-xl{

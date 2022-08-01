@@ -26,16 +26,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
 }
 
-@keyframes done{
-    from{
-
-    }
-    to{
-        
-    }
-    
-}
-
 @keyframes move{
     from{
         opacity: 0;
@@ -46,6 +36,39 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
         top:0px;
     }
 }
+
+.check_box:hover{
+    animation: check 2s;
+}
+
+.check{
+    animation:rotateme 2s;
+}
+
+
+@keyframes check{
+    from{
+        right: -70px;
+    }to{
+        right: 0px;
+    }
+    
+}
+
+@keyframes rotateme{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+
+
+/*test keyframe*/
 
 .test{
     height: 100vh;
@@ -93,3 +116,5 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
         transform: rotate(360deg);
     }
 }
+
+
