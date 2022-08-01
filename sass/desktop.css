@@ -242,6 +242,43 @@ i {
   top: -10px;
 }
 
+.resto{
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+}
+
+.check_box{
+  background-color: #99E2D0;
+  height: 100px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 20px;
+  transform: rotate(180deg); 
+}
+
+.check .fa-solid.fa-check.fa-xl{
+  color : #99E2D0;
+  position: relative;
+  left:10px;
+
+}
+
+.entrees, .plats, .desserts{
+  width:33%;
+} 
+
 .entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
   margin: 2%;
@@ -296,10 +333,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   -webkit-animation: move 2s;
           animation: move 2s;
 }
-.entrees__liste:hover, .plats__liste:hover, .desserts__liste:hover {
-  -webkit-animation: done 2s;
-          animation: done 2s;
-}
+
 
 @-webkit-keyframes done {}
 

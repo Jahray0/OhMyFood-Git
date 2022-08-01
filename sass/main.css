@@ -240,6 +240,14 @@ i {
   top: -10px;
 }
 
+.resto {
+  display: flex;
+  flex-direction: column;
+}
+
+.entrees, .plats, .desserts {
+  width: 100%;
+}
 .entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
   margin: 2%;

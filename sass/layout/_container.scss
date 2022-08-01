@@ -195,10 +195,19 @@ i{
     left:20px;
     top:-10px;
 
+}
+
+.resto{
+    display: flex;
+    flex-direction: column;
   }
+  
+ 
 
 
 .entrees, .plats, .desserts{
+
+    width: 100%;
     
 
     &__liste{
