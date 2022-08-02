@@ -29,16 +29,17 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 @keyframes move{
     from{
         opacity: 0;
-        top:-60px;
+        transform:translateY(-50px);
     }
     to{
         opacity: 1;
-        top:0px;
+        transform:translateY(0px);
+        
     }
 }
 
 .check_box:hover{
-    animation: check 2s;
+    animation: check 2s forwards;
 }
 
 .check{
@@ -48,9 +49,9 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
 @keyframes check{
     from{
-        right: -70px;
+        transform:translateX(0px);
     }to{
-        right: 0px;
+        transform:translateX(-70px);
     }
     
 }

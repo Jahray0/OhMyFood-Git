@@ -56,7 +56,6 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 5px 5px 5px red;
 }
 header img {
   -o-object-fit: cover;
@@ -74,7 +73,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: aqua;
 }
 
 .location {
@@ -236,6 +234,13 @@ i {
      object-fit: cover;
 }
 
+.etablissement{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
 .etablissement h2 {
   padding-left: 20px;
 }
@@ -253,6 +258,10 @@ i {
   display: flex;
   flex-direction: row;
   padding: auto;
+}
+
+.resto p{
+  overflow: ellipsis;
 }
 
 .check_box{

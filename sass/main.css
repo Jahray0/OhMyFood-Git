@@ -56,11 +56,11 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 5px 5px 5px red;
 }
 header img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 35px;
 }
 
 header a {
@@ -72,7 +72,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: aqua;
 }
 
 .location {
@@ -120,7 +119,7 @@ body {
   background-color: rgb(246, 246, 246);
   margin: 5%;
   padding: 5%;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   box-shadow: 5px 5px 10px grey;
@@ -227,6 +226,8 @@ i {
   background-color: rgb(246, 246, 246);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
+  padding-top: 25px;
+  padding-bottom: 45px;
 }
 
 .entete {
@@ -236,8 +237,18 @@ i {
      object-fit: cover;
 }
 
+.etablissement {
+  display: flex;
+  justify-content: space-between;
+}
+
 .etablissement h2 {
   padding-left: 20px;
+}
+
+.fa-regular.fa-heart.fa-xl.note--page2 {
+  position: relative;
+  top: 25px;
 }
 
 .border {
@@ -334,27 +345,27 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 @-webkit-keyframes move {
   from {
     opacity: 0;
-    top: -60px;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0px);
   }
 }
 
 @keyframes move {
   from {
     opacity: 0;
-    top: -60px;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0px);
   }
 }
 .check_box:hover {
-  -webkit-animation: check 2s;
-          animation: check 2s;
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
 }
 
 .check {
@@ -364,19 +375,19 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 
 @-webkit-keyframes check {
   from {
-    right: -70px;
+    transform: translateX(0px);
   }
   to {
-    right: 0px;
+    transform: translateX(-70px);
   }
 }
 
 @keyframes check {
   from {
-    right: -70px;
+    transform: translateX(0px);
   }
   to {
-    right: 0px;
+    transform: translateX(-70px);
   }
 }
 /*transform :translate()*/
