@@ -114,6 +114,11 @@ i{
     }
 }
 
+.partie_supp{
+    display: flex;
+    flex-direction: column;
+  }
+
 .card{
     
     background-color: $colour-white;
@@ -122,6 +127,7 @@ i{
     border-radius: 20px ;
     padding-bottom: 5px;
     box-shadow: 5px 5px 10px grey;
+    width: 90%;
 
     &_img{
         height: 180px;
@@ -164,6 +170,10 @@ i{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.ensemble_vign{
+    padding-bottom: 40px;
 }
 
 

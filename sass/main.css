@@ -61,7 +61,6 @@ header {
 header img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
 }
 
 header a {
@@ -168,6 +167,11 @@ i {
   padding-top: 40px;
 }
 
+.partie_supp {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   background-color: #fff;
   margin: auto;
@@ -175,6 +179,7 @@ i {
   border-radius: 20px;
   padding-bottom: 5px;
   box-shadow: 5px 5px 10px grey;
+  width: 90%;
 }
 .card_img {
   height: 180px;
@@ -211,6 +216,10 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.ensemble_vign {
+  padding-bottom: 40px;
 }
 
 /*---------page 1 ---------*/
@@ -269,6 +278,16 @@ footer {
   background-color: rgb(53, 53, 53);
   color: white;
   padding-left: 5%;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+footer .titre {
+  margin-bottom: 20px;
 }
 
 footer i {
@@ -276,6 +295,14 @@ footer i {
   padding-right: 10px;
   height: 20px;
   width: 20px;
+}
+
+.fcontent {
+  flex-direction: column;
+}
+
+.ftitle {
+  justify-content: flex-start;
 }
 
 /*mettre un coeur rempli en fond caché 
@@ -352,6 +379,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     right: 0px;
   }
 }
+/*transform :translate()*/
 @-webkit-keyframes rotateme {
   from {
     transform: rotate(0deg);

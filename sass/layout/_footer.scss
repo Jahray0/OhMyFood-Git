@@ -2,6 +2,19 @@ footer{
     background-color: rgb(53,53,53);
     color: white;
     padding-left:5%;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .titre{
+        margin-bottom: 20px;
+    }
+
 }
 
 footer i{
@@ -9,4 +22,12 @@ footer i{
     padding-right: 10px;
     height: 20px;
     width: 20px;
+}
+
+.fcontent{
+    flex-direction: column;
+}
+
+.ftitle{
+    justify-content: flex-start;
 }

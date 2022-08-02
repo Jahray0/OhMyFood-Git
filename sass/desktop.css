@@ -61,7 +61,8 @@ header {
 header img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
+  
+  height: 60px;
 }
 
 header a {
@@ -93,8 +94,8 @@ body {
 
 .reservation {
   background-color: rgb(246, 246, 246);
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .reservation h2 {
   padding: 5px;
@@ -115,7 +116,7 @@ body {
 }
 
 .fonctionnement {
-  margin: 5%;
+  margin: 2%;
 
 }
 .fonctionnement li {
@@ -162,21 +163,27 @@ i {
   padding: 10px;
 }
 
+.partie_supp{
+  display: flex;
+  flex-direction: row;
+}
+
 .restaurant {
   background-color: rgb(246, 246, 246);
 }
 .restaurant h2 {
-  margin: 5%;
+  margin: 2%;
   padding-top: 40px;
 }
 
 .card {
   background-color: #fff;
   margin: auto;
-  margin: 5%;
+  margin: 2%;
   border-radius: 20px;
   padding-bottom: 5px;
   box-shadow: 5px 5px 10px grey;
+  width: 50%;
 }
 .card_img {
   height: 180px;
@@ -298,9 +305,22 @@ i {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(53, 53, 53);
   color: white;
-  padding-left: 5%;
+  /*padding-left: 5%;*/  
+}
+
+.fcontent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ftitle{
+  display: flex;
+  justify-content: center;
 }
 
 footer i {
@@ -309,6 +329,8 @@ footer i {
   height: 20px;
   width: 20px;
 }
+
+
 
 /*mettre un coeur rempli en fond caché 
 et faire le passage d'un a l'autre 
