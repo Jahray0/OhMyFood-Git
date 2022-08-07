@@ -225,6 +225,9 @@ i {
   background-color: rgb(246, 246, 246);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  margin-top:-55px;
 }
 
 .entete {
@@ -271,9 +274,8 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1;
   position: relative;
-  right: -70px;
+  left: 15%;
 }
 
 .check{
@@ -368,9 +370,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 
 
-@-webkit-keyframes done {}
-
-@keyframes done {}
 @-webkit-keyframes move {
   from {
     opacity: 0;
