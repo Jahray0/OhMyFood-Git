@@ -55,18 +55,26 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 header img {
   -o-object-fit: cover;
      object-fit: cover;
-  
-  height: 60px;
+  height: 35px;
 }
 
 header a {
   position: absolute;
   left: 10px;
+}
+
+.ombre {
+  box-shadow: 0px 3px 3px #aaaaaa;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -92,8 +100,8 @@ body {
 
 .reservation {
   background-color: rgb(246, 246, 246);
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .reservation h2 {
   padding: 5px;
@@ -114,14 +122,13 @@ body {
 }
 
 .fonctionnement {
-  margin: 2%;
-
+  margin: 5%;
 }
 .fonctionnement li {
   background-color: rgb(246, 246, 246);
   margin: 5%;
   padding: 5%;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   box-shadow: 5px 5px 10px grey;
@@ -137,11 +144,10 @@ a li:hover i {
 ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
+  flex-direction: column;
 }
-
-ul a{
-    width: 33%;
+ul a {
+  width: 100%;
 }
 
 i {
@@ -161,27 +167,27 @@ i {
   padding: 10px;
 }
 
-.partie_supp{
-  display: flex;
-  flex-direction: row;
-}
-
 .restaurant {
   background-color: rgb(246, 246, 246);
 }
 .restaurant h2 {
-  margin: 2%;
+  margin: 5%;
   padding-top: 40px;
+}
+
+.partie_supp {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
   background-color: #fff;
   margin: auto;
-  margin: 2%;
+  margin: 5%;
   border-radius: 20px;
   padding-bottom: 5px;
   box-shadow: 5px 5px 10px grey;
-  width: 50%;
+  width: 90%;
 }
 .card_img {
   height: 180px;
@@ -220,6 +226,10 @@ i {
   align-items: center;
 }
 
+.ensemble_vign {
+  padding-bottom: 40px;
+}
+
 /*---------page 1 ---------*/
 .page2 {
   background-color: rgb(246, 246, 246);
@@ -227,7 +237,7 @@ i {
   border-top-right-radius: 60px;
   padding-top: 25px;
   padding-bottom: 45px;
-  margin-top:-55px;
+  margin-top: -55px;
 }
 
 .entete {
@@ -237,15 +247,18 @@ i {
      object-fit: cover;
 }
 
-.etablissement{
-  display:flex;
+.etablissement {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  
 }
 
 .etablissement h2 {
   padding-left: 20px;
+}
+
+.fa-regular.fa-heart.fa-xl.note--page2 {
+  position: relative;
+  top: 25px;
 }
 
 .border {
@@ -257,98 +270,59 @@ i {
   top: -10px;
 }
 
-.resto{
+.resto {
   display: flex;
-  flex-direction: row;
-  padding: auto;
+  flex-direction: column;
 }
 
-.resto p{
+.entrees, .plats, .desserts {
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.check_box{
-  background-color: #99E2D0;
-  height: 100%;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 15%;
-}
-
-.check{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.check .fa-solid.fa-check.fa-xl{
-  color : #99E2D0;
-  position: relative;
-  left:10px;
-
-}
-
-.entrees, .plats, .desserts{
-  width:33%;
-  text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
-} 
-
+}
 .entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
   margin: 2%;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: flex-end;
   height: 100px;
-  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .entrees p, .entrees h4, .plats p, .plats h4, .desserts p, .desserts h4 {
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees__title p, .plats__title p, .desserts__title p {
   border-bottom: #99E2D0;
-  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.entrees__name h4, .plats__liste h4, .desserts__liste h4{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.entrees__prix {
+  display: flex;
+  justify-content: end;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(53, 53, 53);
   color: white;
-  /*padding-left: 5%;*/  
+  padding-left: 5%;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-.fcontent{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+footer p {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
-
-.ftitle{
-  display: flex;
-  justify-content: center;
+footer .titre {
+  margin-bottom: 20px;
 }
 
 footer i {
@@ -358,7 +332,17 @@ footer i {
   width: 20px;
 }
 
+.fcontent {
+  flex-direction: column;
+}
 
+.ftitle {
+  justify-content: flex-start;
+}
+
+/*mettre un coeur rempli en fond caché 
+et faire le passage d'un a l'autre 
+avec opacity ou z-index */
 i.fa-regular.fa-heart.fa-2xl {
   position: relative;
   left: 56px;
@@ -382,51 +366,131 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
           animation: move 2s;
 }
 
-
 @-webkit-keyframes move {
   from {
     opacity: 0;
-    top: -60px;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0px);
   }
 }
+
 @keyframes move {
   from {
     opacity: 0;
-    top: -60px;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0px);
   }
 }
+.entrees__liste:hover > .check_box {
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
+}
+
+.plats__liste:hover > .check_box {
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
+}
+
+.desserts__liste:hover > .check_box {
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
+}
+
+.check {
+  -webkit-animation: rotateme 2s;
+          animation: rotateme 2s;
+}
+
+.check_box {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -80px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.check .fa-solid.fa-check.fa-xl {
+  color: #99E2D0;
+  position: relative;
+  left: 10px;
+}
+
+@-webkit-keyframes check {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes check {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-70px);
+  }
+}
+/*transform :translate()*/
+@-webkit-keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*test keyframe*/
 .test {
-  /*height: 100vh;*/
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
+  left: 50%;
   top:50%;
-  left: 45%;
 }
 
 .container {
-  background: green;
+  background: #FF79DA;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   transform-origin: center;
-  -webkit-animation: rotate 2s ease forwards ;
-          animation: rotate 2s ease forwards ;
-  /*-webkit-animation: appears 4s forwards;
-          animation: appears 4s forwards;*/
+  -webkit-animation: rotate 2s ease forwards;
+          animation: rotate 2s ease forwards;
+  /*animation: appears 4s forwards;*/
 }
 
 .circle {
-  background: blue;
+  background: #9356DC;
   width: 40px;
   height: 40px;
   border-radius: 50%;

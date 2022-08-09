@@ -114,7 +114,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 /*test keyframe*/
 
 .test{
-    /*height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,18 +123,18 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 }
 
 .container{
-    background:green;
+    background:$colour-secondaire;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transform-origin: center;
-    animation:rotate 2s ease forwards infinite;
-    animation: appears 4s forwards;
+    animation:rotate 2s ease forwards ;
+    /*animation: appears 4s forwards;*/
     
 }
 
 .circle{
-    background:blue;
+    background:$colour-primaire;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -154,6 +153,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 @keyframes rotate{
     0%{
         transform: rotate(0deg);
+        opacity: 1;
     }
 
     50%{
@@ -162,6 +162,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
     100%{
         transform: rotate(360deg);
+        opacity: 0;
     }
 }
 
