@@ -38,13 +38,53 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     }
 }
 
-.check_box:hover{
+.entrees__liste:hover >.check_box{
     animation: check 2s forwards;
+    
 }
+
+.plats__liste:hover >.check_box{
+    animation: check 2s forwards;
+    
+}
+
+.desserts__liste:hover >.check_box{
+    animation: check 2s forwards;
+    
+}
+
 
 .check{
     animation:rotateme 2s;
 }
+
+.check_box{
+    background-color: #99E2D0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -80px;
+  }
+  
+  .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .check .fa-solid.fa-check.fa-xl{
+    color : #99E2D0;
+    position: relative;
+    left:10px;
+  
+  }
 
 
 @keyframes check{
@@ -74,19 +114,24 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 /*test keyframe*/
 
 .test{
-    height: 100vh;
-    display: grid;
+    /*height: 100vh;*/
+    display: flex;
     justify-content: center;
     align-items: center;
+    position:fixed;
+    left:45%;
+    
 }
 
 .container{
-    background:red;
+    background:green;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transform-origin: center;
     animation:rotate 2s ease forwards infinite;
+    animation: appears 4s forwards;
+    
 }
 
 .circle{
@@ -117,6 +162,15 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes appears{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
 

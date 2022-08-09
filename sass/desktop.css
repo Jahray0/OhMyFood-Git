@@ -264,7 +264,8 @@ i {
 }
 
 .resto p{
-  overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .check_box{
@@ -297,6 +298,9 @@ i {
 
 .entrees, .plats, .desserts{
   width:33%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 } 
 
 .entrees__liste, .plats__liste, .desserts__liste {
@@ -306,6 +310,10 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .entrees p, .entrees h4, .plats p, .plats h4, .desserts p, .desserts h4 {
   padding-left: 20px;
@@ -313,6 +321,15 @@ i {
 }
 .entrees__title p, .plats__title p, .desserts__title p {
   border-bottom: #99E2D0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.entrees__name h4, .plats__liste h4, .desserts__liste h4{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 footer {
@@ -342,10 +359,6 @@ footer i {
 }
 
 
-
-/*mettre un coeur rempli en fond caché 
-et faire le passage d'un a l'autre 
-avec opacity ou z-index */
 i.fa-regular.fa-heart.fa-2xl {
   position: relative;
   left: 56px;
@@ -391,20 +404,25 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
 }
 .test {
-  height: 100vh;
-  display: grid;
+  /*height: 100vh;*/
+  display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top:50%;
+  left: 45%;
 }
 
 .container {
-  background: red;
+  background: green;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   transform-origin: center;
-  -webkit-animation: rotate 2s ease forwards infinite;
-          animation: rotate 2s ease forwards infinite;
+  -webkit-animation: rotate 2s ease forwards ;
+          animation: rotate 2s ease forwards ;
+  /*-webkit-animation: appears 4s forwards;
+          animation: appears 4s forwards;*/
 }
 
 .circle {
@@ -427,23 +445,43 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 @-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   50% {
     transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   50% {
     transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes appears {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes appears {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */

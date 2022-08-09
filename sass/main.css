@@ -55,7 +55,7 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 header img {
   -o-object-fit: cover;
@@ -277,22 +277,36 @@ i {
 
 .entrees, .plats, .desserts {
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
   margin: 2%;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: flex-end;
   height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees p, .entrees h4, .plats p, .plats h4, .desserts p, .desserts h4 {
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees__title p, .plats__title p, .desserts__title p {
   border-bottom: #99E2D0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entrees__prix {
+  display: flex;
+  justify-content: end;
 }
 
 footer {
@@ -373,7 +387,17 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     transform: translateY(0px);
   }
 }
-.check_box:hover {
+.entrees__liste:hover > .check_box {
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
+}
+
+.plats__liste:hover > .check_box {
+  -webkit-animation: check 2s forwards;
+          animation: check 2s forwards;
+}
+
+.desserts__liste:hover > .check_box {
   -webkit-animation: check 2s forwards;
           animation: check 2s forwards;
 }
@@ -381,6 +405,33 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 .check {
   -webkit-animation: rotateme 2s;
           animation: rotateme 2s;
+}
+
+.check_box {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -80px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.check .fa-solid.fa-check.fa-xl {
+  color: #99E2D0;
+  position: relative;
+  left: 10px;
 }
 
 @-webkit-keyframes check {
@@ -419,20 +470,24 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 /*test keyframe*/
 .test {
-  height: 100vh;
-  display: grid;
+  /*height: 100vh;*/
+  display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  left: 45%;
 }
 
 .container {
-  background: red;
+  background: green;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   transform-origin: center;
   -webkit-animation: rotate 2s ease forwards infinite;
           animation: rotate 2s ease forwards infinite;
+  -webkit-animation: appears 4s forwards;
+          animation: appears 4s forwards;
 }
 
 .circle {
@@ -473,5 +528,21 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes appears {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes appears {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */

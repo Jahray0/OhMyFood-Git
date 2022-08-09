@@ -229,6 +229,9 @@ i{
 .entrees, .plats, .desserts{
 
     width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     
 
     &__liste{
@@ -236,16 +239,28 @@ i{
         margin: 2%;
         border-radius: 20px;
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         align-items: flex-end;
         height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
     }
     p, h4{
         padding-left: 20px;
         padding-right: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
     }
     &__title p{
         border-bottom: $colour-tertiaire;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+}
 
+.entrees__prix{
+    display: flex;
+    justify-content: end;
 }
