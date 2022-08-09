@@ -239,11 +239,12 @@ i{
         margin: 2%;
         border-radius: 20px;
         display: flex;
-        /*justify-content: space-between;*/
+        justify-content: space-between;
         align-items: flex-end;
         height: 100px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
     
     }
     p, h4{
@@ -251,12 +252,15 @@ i{
         padding-right: 20px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 0.9em;
     
     }
     &__title p{
         border-bottom: $colour-tertiaire;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 

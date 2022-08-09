@@ -25,6 +25,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     animation : move 2s;
 
 }
+/*Animation affichage des menu (translation verticale)*/
 
 @keyframes move{
     from{
@@ -54,7 +55,15 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 }
 
 
-.check{
+.entrees__liste:hover>.check_box .check .fa-solid.fa-check.fa-xl{
+    animation:rotateme 2s;
+}
+
+.plats__liste:hover>.check_box .check .fa-solid.fa-check.fa-xl{
+    animation:rotateme 2s;
+}
+
+.desserts__liste:hover>.check_box .check .fa-solid.fa-check.fa-xl{
     animation:rotateme 2s;
 }
 
@@ -83,9 +92,12 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     color : #99E2D0;
     position: relative;
     left:10px;
+    transform-origin: 10px 0px;
+    
   
   }
 
+/*Animation de la check box qui arrive (translation horizontale)*/
 
 @keyframes check{
     from{
@@ -96,7 +108,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     
 }
 
-/*transform :translate()*/
+/*Animation faisant bouger le check a 360°*/
 
 @keyframes rotateme{
     from{
@@ -107,11 +119,34 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     
 }
 
+@keyframes appears{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes appears-reverse{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 
 
 
 
 /*test keyframe*/
+/*animation du loader*/
+
+.page1{
+    animation: appears-reverse 4s;
+}
 
 .test{
     display: flex;
@@ -166,13 +201,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     }
 }
 
-@keyframes appears{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
+
 
 
