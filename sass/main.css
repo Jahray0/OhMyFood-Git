@@ -345,7 +345,7 @@ footer i {
 }
 
 .ftitle {
-  justify-content: flex-start;
+  text-align: left;
 }
 
 /*mettre un coeur rempli en fond caché 
