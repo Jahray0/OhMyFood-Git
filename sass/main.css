@@ -291,15 +291,11 @@ i {
   align-items: flex-end;
   height: 100px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .entrees__name, .plats__name, .desserts__name {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 0.9em;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .entrees__name p, .entrees h4, .plats__name p, .plats h4, .desserts__name p, .desserts h4 {
   overflow: hidden;
