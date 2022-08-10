@@ -250,6 +250,7 @@ i {
 .etablissement {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .etablissement h2 {
@@ -266,7 +267,6 @@ i {
   height: 4px;
   background-color: #99E2D0;
   position: relative;
-  left: 20px;
   top: -10px;
 }
 
@@ -277,9 +277,6 @@ i {
 
 .entrees, .plats, .desserts {
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .entrees__liste, .plats__liste, .desserts__liste {
   background-color: #fff;
@@ -293,19 +290,26 @@ i {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.entrees p, .entrees h4, .plats p, .plats h4, .desserts p, .desserts h4 {
+.entrees__name, .plats__name, .desserts__name {
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.entrees__name p, .entrees h4, .plats__name p, .plats h4, .desserts__name p, .desserts h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 0.9em;
 }
 .entrees__title p, .plats__title p, .desserts__title p {
   border-bottom: #99E2D0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+.entrees__prix, .plats__prix, .desserts__prix {
+  padding-right: 10px;
+}
+.entrees__title, .plats__title, .desserts__title {
+  padding-left: 20px;
 }
 
 .entrees__prix {
@@ -364,10 +368,24 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   opacity: 1;
 }
 
-.entrees__liste, .plats__liste, .desserts__liste {
+.entrees__liste {
   position: relative;
-  -webkit-animation: move 2s;
-          animation: move 2s;
+  -webkit-animation: move 2s forwards;
+          animation: move 2s forwards;
+}
+
+.plats__liste {
+  position: relative;
+  -webkit-animation: move 2s 0.3s forwards;
+          animation: move 2s 0.3s forwards;
+  opacity: 0;
+}
+
+.desserts__liste {
+  position: relative;
+  -webkit-animation: move 2s 0.6s forwards;
+          animation: move 2s 0.6s forwards;
+  opacity: 0;
 }
 
 /*Animation affichage des menu (translation verticale)*/
@@ -391,34 +409,42 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     transform: translateY(0px);
   }
 }
-.entrees__liste:hover > .check_box {
+.entrees__liste:hover > .prix_check {
   -webkit-animation: check 2s forwards;
           animation: check 2s forwards;
 }
 
-.plats__liste:hover > .check_box {
+.plats__liste:hover > .prix_check {
   -webkit-animation: check 2s forwards;
           animation: check 2s forwards;
 }
 
-.desserts__liste:hover > .check_box {
+.desserts__liste:hover > .prix_check {
   -webkit-animation: check 2s forwards;
           animation: check 2s forwards;
 }
 
-.entrees__liste:hover > .check_box .check .fa-solid.fa-check.fa-xl {
+.entrees__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
+  -webkit-animation: rotateme 2s 0.2s;
+          animation: rotateme 2s 0.2s;
+}
+
+.plats__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
   -webkit-animation: rotateme 2s;
           animation: rotateme 2s;
 }
 
-.plats__liste:hover > .check_box .check .fa-solid.fa-check.fa-xl {
+.desserts__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
   -webkit-animation: rotateme 2s;
           animation: rotateme 2s;
 }
 
-.desserts__liste:hover > .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 2s;
-          animation: rotateme 2s;
+.prix_check {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  position: relative;
+  left: 80px;
 }
 
 .check_box {
@@ -428,8 +454,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: -80px;
+  /*position: absolute;*/
+  /*right: -80px;*/
 }
 
 .check {
@@ -455,7 +481,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-70px);
+    transform: translateX(-80px);
   }
 }
 @keyframes check {
@@ -463,7 +489,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-70px);
+    transform: translateX(-80px);
   }
 }
 /*Animation faisant bouger le check a 360°*/
@@ -501,7 +527,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 @-webkit-keyframes appears-reverse {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -509,7 +535,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 @keyframes appears-reverse {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -522,14 +548,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
           animation: appears-reverse 4s;
 }
 
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 45%;
-}
-
 .container {
   background: #FF79DA;
   width: 40px;
@@ -539,6 +557,14 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   -webkit-animation: rotate 2s ease forwards;
           animation: rotate 2s ease forwards;
   /*animation: appears 4s forwards;*/
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 45%;
 }
 
 .circle {
@@ -565,6 +591,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   50% {
     transform: rotate(180deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
@@ -579,6 +606,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   50% {
     transform: rotate(180deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);

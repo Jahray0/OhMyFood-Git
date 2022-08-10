@@ -1,0 +1,9 @@
+.entete{
+    width: 375px;
+    height: 200px;
+}
+
+.entrees__liste{
+    display: flex;
+}
+
