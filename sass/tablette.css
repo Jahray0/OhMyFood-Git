@@ -7,3 +7,17 @@
     width: 100%;
     margin: auto;
 }
+
+.card_img {
+    height: 180px;
+
+  }
+  .card_image {
+    width: 100%;
+    height: 180px;
+
+  }
+
+.card_new {
+    bottom: 165px;
+  }
