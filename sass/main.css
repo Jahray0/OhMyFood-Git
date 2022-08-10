@@ -54,7 +54,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 header img {
@@ -565,6 +565,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   align-items: center;
   position: fixed;
   left: 45%;
+  top: 50%;
 }
 
 .circle {
