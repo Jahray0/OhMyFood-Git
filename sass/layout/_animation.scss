@@ -151,6 +151,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     }
     to{
         opacity: 0;
+        position: absolute;
     }
 }
 
@@ -174,23 +175,24 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     animation: appears-reverse 4s;
 }
 
-.container{
-    background:$colour-secondaire;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform-origin: center;
-    animation:rotate 2s ease forwards ;
-    /*animation: appears 4s forwards;*/ 
-}
-
-.loader{
+.loader{ 
     display: flex;
     justify-content: center;
     align-items: center;
     position:fixed;
     left:45%;  
     top:50%;
+    animation: appears 4s 2s forwards;
+}
+
+.container{ 
+    background:$colour-secondaire;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform-origin: center;
+    animation:rotate 2s ease forwards ;
+    
 }
 
 
