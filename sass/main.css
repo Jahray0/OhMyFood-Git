@@ -442,9 +442,9 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 .prix_check {
   display: flex;
   height: 100px;
+  width: 0;
   align-items: center;
   position: relative;
-  left: 80px;
 }
 
 .check_box {
@@ -486,10 +486,10 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 @keyframes check {
   from {
-    transform: translateX(0px);
+    width: 0;    
   }
   to {
-    transform: translateX(-80px);
+    width: 80px;   
   }
 }
 /*Animation faisant bouger le check a 360°*/
