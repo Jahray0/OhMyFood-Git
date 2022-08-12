@@ -348,9 +348,6 @@ footer i {
   text-align: left;
 }
 
-/*mettre un coeur rempli en fond caché 
-et faire le passage d'un a l'autre 
-avec opacity ou z-index */
 i.fa-regular.fa-heart.fa-2xl {
   position: relative;
   left: 56px;
@@ -410,41 +407,41 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
 }
 .entrees__liste:hover > .prix_check {
-  -webkit-animation: check 2s forwards;
-          animation: check 2s forwards;
+  -webkit-animation: check 1.5s forwards;
+          animation: check 1.5s forwards;
 }
 
 .plats__liste:hover > .prix_check {
-  -webkit-animation: check 2s forwards;
-          animation: check 2s forwards;
+  -webkit-animation: check 1.5s forwards;
+          animation: check 1.5s forwards;
 }
 
 .desserts__liste:hover > .prix_check {
-  -webkit-animation: check 2s forwards;
-          animation: check 2s forwards;
+  -webkit-animation: check 1.5s forwards;
+          animation: check 1.5s forwards;
 }
 
 .entrees__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 2s 0.2s;
-          animation: rotateme 2s 0.2s;
+  -webkit-animation: rotateme 1.5s 0.2s;
+          animation: rotateme 1.5s 0.2s;
 }
 
 .plats__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 2s;
-          animation: rotateme 2s;
+  -webkit-animation: rotateme 1.5s;
+          animation: rotateme 1.5s;
 }
 
 .desserts__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 2s;
-          animation: rotateme 2s;
+  -webkit-animation: rotateme 1.5s;
+          animation: rotateme 1.5s;
 }
 
 .prix_check {
   display: flex;
   height: 100px;
+  width: 0;
   align-items: center;
   position: relative;
-  left: 80px;
 }
 
 .check_box {
@@ -478,18 +475,18 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 /*Animation de la check box qui arrive (translation horizontale)*/
 @-webkit-keyframes check {
   from {
-    transform: translateX(0px);
+    width: 0;
   }
   to {
-    transform: translateX(-80px);
+    width: 80px;
   }
 }
 @keyframes check {
   from {
-    transform: translateX(0px);
+    width: 0;
   }
   to {
-    transform: translateX(-80px);
+    width: 80px;
   }
 }
 /*Animation faisant bouger le check a 360°*/
