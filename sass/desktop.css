@@ -563,7 +563,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 /*test keyframe*/
 /*animation du loader*/
-.page1 {
+.corps {
   -webkit-animation: appears-reverse 4s;
           animation: appears-reverse 4s;
 }
