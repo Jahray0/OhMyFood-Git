@@ -96,8 +96,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*position: absolute;*/
-    /*right: -80px;*/
   }
   
   .check{
@@ -221,6 +219,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
     100%{
         transform: rotate(360deg);
-        opacity: 0;
+        opacity: 0; /*disparition du loader*/
     }
 }
