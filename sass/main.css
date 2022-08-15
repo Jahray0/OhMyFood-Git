@@ -355,12 +355,15 @@ footer i {
   text-align: left;
 }
 
+/*Animation du coeur*/
+/*coeur non rempli (z-index 1)*/
 i.fa-regular.fa-heart.fa-2xl {
   position: relative;
   left: 56px;
   z-index: 1;
 }
 
+/*coeur non rempli (z-index 2) + transition 0.5 sec lors + opacity 1 au survol*/
 i.fa-solid.fa-heart.fa-2xl.note--full {
   position: relative;
   opacity: 0;
@@ -370,26 +373,6 @@ i.fa-solid.fa-heart.fa-2xl.note--full {
 }
 i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   opacity: 1;
-}
-
-.entrees__liste {
-  position: relative;
-  -webkit-animation: move 2s forwards;
-          animation: move 2s forwards;
-}
-
-.plats__liste {
-  position: relative;
-  -webkit-animation: move 2s 0.3s forwards;
-          animation: move 2s 0.3s forwards;
-  opacity: 0;
-}
-
-.desserts__liste {
-  position: relative;
-  -webkit-animation: move 2s 0.6s forwards;
-          animation: move 2s 0.6s forwards;
-  opacity: 0;
 }
 
 /*Animation affichage des menu (translation verticale)*/
@@ -413,6 +396,46 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     transform: translateY(0px);
   }
 }
+/*pas de delai*/
+.entrees__liste {
+  position: relative;
+  -webkit-animation: move 2s forwards;
+          animation: move 2s forwards;
+}
+
+/*delai 0.3s*/
+.plats__liste {
+  position: relative;
+  -webkit-animation: move 2s 0.3s forwards;
+          animation: move 2s 0.3s forwards;
+  opacity: 0;
+}
+
+/*delai 0.6s*/
+.desserts__liste {
+  position: relative;
+  -webkit-animation: move 2s 0.6s forwards;
+          animation: move 2s 0.6s forwards;
+  opacity: 0;
+}
+
+/*Animation de la check box qui arrive (translation horizontale)*/
+@-webkit-keyframes check {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
+@keyframes check {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
 .entrees__liste:hover > .prix_check {
   -webkit-animation: check 1.5s forwards;
           animation: check 1.5s forwards;
@@ -428,9 +451,26 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
           animation: check 1.5s forwards;
 }
 
+/*Animation faisant bouger le check a 360°*/
+@-webkit-keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .entrees__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 1.5s 0.2s;
-          animation: rotateme 1.5s 0.2s;
+  -webkit-animation: rotateme 1.5s;
+          animation: rotateme 1.5s;
 }
 
 .plats__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
@@ -477,58 +517,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   transform-origin: 10px 0px;
 }
 
-/*Animation de la check box qui arrive (translation horizontale)*/
-@-webkit-keyframes check {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80px;
-  }
-}
-@keyframes check {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80px;
-  }
-}
-/*Animation faisant bouger le check a 360°*/
-@-webkit-keyframes rotateme {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotateme {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes appears {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    position: absolute;
-  }
-}
-@keyframes appears {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    position: absolute;
-  }
-}
+/*Apparition progressive de la main page*/
 @-webkit-keyframes appears-reverse {
   from {
     opacity: 0.5;
@@ -545,13 +534,40 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
     opacity: 1;
   }
 }
-/*test keyframe*/
-/*animation du loader*/
 .corps {
   -webkit-animation: appears-reverse 4s;
           animation: appears-reverse 4s;
 }
 
+/*deisparition progressive du loader*/
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0; /*disparition du loader*/
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0; /*disparition du loader*/
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -590,32 +606,22 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   top: -40px;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+@-webkit-keyframes appears {
+  from {
     opacity: 1;
   }
-  50% {
-    transform: rotate(180deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0; /*disparition du loader*/
+  to {
+    opacity: 0;
+    position: absolute;
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+@keyframes appears {
+  from {
     opacity: 1;
   }
-  50% {
-    transform: rotate(180deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0; /*disparition du loader*/
+  to {
+    opacity: 0;
+    position: absolute;
   }
 }/*# sourceMappingURL=main.css.map */

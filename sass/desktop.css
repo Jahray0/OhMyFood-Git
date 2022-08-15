@@ -448,8 +448,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 
 .entrees__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
-  -webkit-animation: rotateme 1.5s 0.2s;
-          animation: rotateme 1.5s 0.2s;
+  -webkit-animation: rotateme 1.5s;
+          animation: rotateme 1.5s;
 }
 
 .plats__liste:hover > .prix_check .check_box .check .fa-solid.fa-check.fa-xl {
