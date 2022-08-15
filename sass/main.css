@@ -50,6 +50,11 @@ footer a {
   margin-top: 40px;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 10px 10px 10px grey;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -102,6 +107,8 @@ body {
   background-color: rgb(246, 246, 246);
   padding-bottom: 40px;
   padding-top: 40px;
+  position: relative;
+  z-index: 1;
 }
 .reservation h2 {
   padding: 5px;
@@ -542,7 +549,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 /*test keyframe*/
 /*animation du loader*/
-.page1 {
+.corps {
   -webkit-animation: appears-reverse 4s;
           animation: appears-reverse 4s;
 }
@@ -552,10 +559,11 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 45%;
   top: 50%;
+  left: 45%;
   -webkit-animation: appears 4s 2s forwards;
           animation: appears 4s 2s forwards;
+  z-index: 2;
 }
 
 .container {
@@ -566,6 +574,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   transform-origin: center;
   -webkit-animation: rotate 2s ease forwards;
           animation: rotate 2s ease forwards;
+  position: relative;
+  z-index: 2;
 }
 
 .circle {
@@ -574,6 +584,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   height: 40px;
   border-radius: 50%;
   position: relative;
+  z-index: 2;
 }
 
 .circle:nth-child(1) {

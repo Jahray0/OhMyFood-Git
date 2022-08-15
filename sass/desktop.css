@@ -50,6 +50,11 @@ footer a {
   margin-top: 40px;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 10px 10px 10px grey;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -573,14 +578,14 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 50%;
   top: 50%;
+  left: 50%;
   -webkit-animation: appears 4s 2s forwards;
           animation: appears 4s 2s forwards;
+  z-index: 2;
 }
 
 .container {
-  z-index: 2;
   background: #FF79DA;
   width: 40px;
   height: 40px;
@@ -588,6 +593,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   transform-origin: center;
   -webkit-animation: rotate 2s ease forwards;
           animation: rotate 2s ease forwards;
+  position: relative;
+  z-index: 2;
 }
 
 .circle {
@@ -596,6 +603,11 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   height: 40px;
   border-radius: 50%;
   position: relative;
+  z-index: 2;
+}
+
+.circle:nth-child(1) {
+  left: -100px;
 }
 
 .circle:nth-child(1) {

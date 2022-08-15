@@ -27,6 +27,8 @@ body{
     background-color: $colour-back;
     padding-bottom: 40px;
     padding-top: 40px;    
+    position:relative;
+    z-index: 1;
 
     h2{
         padding: 5px;
