@@ -153,8 +153,8 @@ ul {
   padding: 0;
   flex-direction: column;
 }
-ul a {
-  width: 100%;
+ul li {
+  width: 80%;
 }
 
 i {
@@ -241,7 +241,7 @@ i {
   padding-bottom: 40px;
 }
 
-/*---------page 1 ---------*/
+/*---------page restaurants ---------*/
 .page2 {
   background-color: rgb(246, 246, 246);
   border-top-left-radius: 60px;
@@ -551,7 +551,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0; /*disparition du loader*/
+    opacity: 1; /*disparition du loader*/
   }
 }
 @keyframes rotate {
@@ -565,7 +565,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0; /*disparition du loader*/
+    opacity: 1; /*disparition du loader*/
   }
 }
 .loader {
@@ -586,8 +586,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   height: 40px;
   border-radius: 50%;
   transform-origin: center;
-  -webkit-animation: rotate 2s ease forwards;
-          animation: rotate 2s ease forwards;
+  -webkit-animation: rotate 2s ease forwards infinite;
+          animation: rotate 2s ease forwards infinite;
 }
 
 .circle {

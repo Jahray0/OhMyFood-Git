@@ -18,9 +18,7 @@
     transition: transform 400ms;
 
     &:hover{
-        transform: translate(150px,150px);
-        
-        
+        transform: translate(150px,150px);       
     }
 }
 
@@ -30,7 +28,6 @@
         padding:50px;
     }
 }
-
 
     .note--red {
         border-radius: 10rem;
@@ -44,7 +41,6 @@
             transform: scale(1.13);
             background-color: yellow;
         }
-
 }
 
 

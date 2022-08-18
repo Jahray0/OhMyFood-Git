@@ -19,7 +19,6 @@ body{
         margin: auto;
         padding: 10px;
     }
-
 }
 
 
@@ -36,8 +35,7 @@ body{
         justify-content: center;
         margin: auto;
         width: 70%;
-        text-align: center;
-        
+        text-align: center;       
     }
     
     p{
@@ -48,9 +46,7 @@ body{
         justify-content: center;
         padding: 10px;
         width: 70%;
-
     }
-
 }
 
 .fonctionnement{
@@ -65,7 +61,6 @@ body{
         align-items: center; 
         box-shadow: 5px 5px 10px grey;
     }
-
 }
 
 a li:hover{
@@ -80,9 +75,8 @@ ul{
     list-style-type: none;
     padding: 0;
     flex-direction: column;
-
-    a{
-        width: 100%;
+    li{
+        width: 80%;
     }
 }
     
@@ -101,9 +95,7 @@ i{
     height: 20px; 
     text-align: center;
     vertical-align: middle;
-    padding: 10px;
-
-    
+    padding: 10px;   
 }
 
 .restaurant{
@@ -160,7 +152,6 @@ i{
         right: 15px;
         padding: 8px;
         width: 65px;     
-
     }
 
 }
@@ -170,7 +161,6 @@ i{
     margin-top: 10px;
     margin-bottom:10px;
     margin-left: 10px;
-
 }
 
 .card_body{
@@ -185,7 +175,7 @@ i{
 
 
 
-/*---------page 1 ---------*/
+/*---------page restaurants ---------*/
 
 .page2{
     background-color: $colour-back;
@@ -223,7 +213,6 @@ i{
     background-color: $colour-tertiaire;
     position: relative;
     top:-10px;
-
 }
 
 .resto{
@@ -232,13 +221,9 @@ i{
   }
   
  
-
-
 .entrees, .plats, .desserts{
 
     width: 100%;
-
-    
 
     &__liste{
         background-color: #fff;
@@ -248,16 +233,12 @@ i{
         justify-content: space-between;
         align-items: flex-end;
         height: 100px;
-        overflow: hidden;
-
-
-    
+        overflow: hidden; 
     }
     &__name{
         padding-left: 20px;
         padding-right: 20px;
         font-size: 0.9em;
-
     }
 
     &__name p,h4{

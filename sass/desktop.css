@@ -132,8 +132,8 @@ body {
 }
 .fonctionnement li {
   background-color: rgb(246, 246, 246);
-  margin: 5%;
-  padding: 5%;
+  margin: 2%;
+  padding: 2%;
   border-radius: 25px;
   display: flex;
   
@@ -141,10 +141,10 @@ body {
   box-shadow: 5px 5px 10px grey;
 }
 
-a li:hover {
+li:hover {
   background-color: rgb(245, 237, 255);
 }
-a li:hover i {
+li:hover i {
   color: #9356DC;
 }
 
@@ -155,7 +155,7 @@ ul {
   flex-direction: row;
   
 }
-ul a {
+ul li {
   width: 100%;
 }
 
@@ -245,7 +245,7 @@ i {
   padding-bottom: 40px;
 }
 
-/*---------page 1 ---------*/
+/*---------page restaurants ---------*/
 
 header{
   height: 80px;
@@ -591,8 +591,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   height: 40px;
   border-radius: 50%;
   transform-origin: center;
-  -webkit-animation: rotate 2s ease forwards;
-          animation: rotate 2s ease forwards;
+  -webkit-animation:rotate 2s ease forwards infinite ;
+          animation:rotate 2s ease forwards infinite ;
   position: relative;
   z-index: 2;
 }
@@ -619,6 +619,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   top: -40px;
 }
 
+/*deisparition progressive du loader*/
 @-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -630,10 +631,9 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
+    opacity: 1; /*disparition du loader*/
   }
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -645,6 +645,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
+    opacity: 1; /*disparition du loader*/
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

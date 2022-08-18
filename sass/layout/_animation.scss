@@ -162,7 +162,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 
     100%{
         transform: rotate(360deg);
-        opacity: 0; /*disparition du loader*/
+        opacity: 1; /*disparition du loader*/
     }
 }
 
@@ -183,7 +183,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     height: 40px;
     border-radius: 50%;
     transform-origin: center;
-    animation:rotate 2s ease forwards ;  
+    animation:rotate 2s ease forwards infinite ;  
 }
 
 
