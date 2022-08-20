@@ -552,7 +552,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 @-webkit-keyframes appears-reverse {
   from {
-    opacity: 0.5;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -560,7 +560,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 }
 @keyframes appears-reverse {
   from {
-    opacity: 0.5;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -569,8 +569,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 /*test keyframe*/
 /*animation du loader*/
 .corps {
-  -webkit-animation: appears-reverse 4s;
-          animation: appears-reverse 4s;
+  -webkit-animation: appears-reverse 6s;
+          animation: appears-reverse 6s;
 }
 
 .loader {
@@ -580,8 +580,8 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-animation: appears 4s 2s forwards;
-          animation: appears 4s 2s forwards;
+  -webkit-animation: appears 6s forwards;
+          animation: appears 6s forwards;
   z-index: 2;
 }
 
