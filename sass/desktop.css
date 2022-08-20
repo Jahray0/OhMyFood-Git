@@ -623,15 +623,12 @@ i.fa-solid.fa-heart.fa-2xl.note--full:hover {
 @-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   50% {
     transform: rotate(180deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1; /*disparition du loader*/
   }
 }
 @keyframes rotate {
