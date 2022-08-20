@@ -31,7 +31,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
 }
 
 .corps{
-    animation: appears-reverse 6s;
+    animation: appears-reverse 3s;
 }
 
 /*disparition progressive du loader*/
@@ -61,7 +61,7 @@ i.fa-solid.fa-heart.fa-2xl.note--full{
     position:fixed;
     top:50%;
     left: 45%;
-    animation: appears 6s forwards;
+    animation: appears 3s forwards;
     z-index: 2;
 }
 
